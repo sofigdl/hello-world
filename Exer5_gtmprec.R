@@ -9,4 +9,5 @@ spplot(prec_ger1) #plot results
 prec_ger2<- mask(prec_ger1, guatemala) #mask precipitacion to extent of guate
 spplot(prec_ger2) #plot result
 prec_avg<-cellStats(prec_ger2,stat="mean") #extract precipitation average of guate, other statistics possible as well
-plot(prec_avg)
+plot(prec_avg,
+     col=12)
